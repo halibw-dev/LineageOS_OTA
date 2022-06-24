@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": 1655914549,
-      "filename": "lineage-19.1-20220622-UNOFFICIAL-oxygen.zip",
-      "id": "5d5e0acfc2eac4cc8dff26273820c36a",
+      "datetime": 1656068036,
+      "filename": "lineage-19.1-20220624-UNOFFICIAL-oxygen.zip",
+      "id": "64c35f9fa62d316b757a5a71a9cd1d1c",
       "romtype": "UNOFFICIAL",
-      "size": 765874742,
-      "url": "https://sourceforge.net/projects/max-2-pixelexperience-ota/files/lineage-19.1-20220622-UNOFFICIAL-oxygen.zip/download",
+      "size": 765916925,
+      "url": "https://sourceforge.net/projects/max-2-pixelexperience-ota/files/LineageOS/lineage-19.1-20220624-UNOFFICIAL-oxygen.zip/download",
       "version": "19.1"
     }
   ]
