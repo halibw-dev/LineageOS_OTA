@@ -1,12 +1,12 @@
 {
   "response": [
     {
-      "datetime": ,
-      "filename": "",
-      "id": "",
-      "romtype": "",
-      "size": ,
-      "url": "",
+      "datetime": 1665227169,
+      "filename": "lineage-20.0-20221008-UNOFFICIAL-oxygen.zip",
+      "id": "d432b77830a6dda70cd412093a147f38",
+      "romtype": "UNOFFICIAL",
+      "size": 792395681,
+      "url": "https://sourceforge.net/projects/max-2-pixelexperience-ota/files/LineageOS/lineage-20.0-20221008-UNOFFICIAL-oxygen.zip/download",
       "version": "20.0"
     }
   ]
