@@ -1,5 +1,3 @@
-#!/bin/bash
-
 build_cache=$(grep -r 'ro.lineage.version=' ~/lineage/out/target/product/oxygen/system/build.prop | cut -d '=' -f 2 |  cut -b 6-13)
 oldd=$(grep filename los-20.json | cut -d '-' -f 3)
 md5=$(md5sum ../lineage/out/target/product/oxygen/lineage-20.0-"${build_cache}"-UNOFFICIAL-oxygen.zip | cut -d ' ' -f 1)
@@ -17,3 +15,9 @@ sed -i "s!${oldd}!${build_cache}!" los-20.json
 echo New Download URL
 read -r url
 sed -i "s!${oldurl}!\"${url}\",!g" los-20.json
+
+# Auto submit
+date=$(date +%Y%m%d)
+message="Update los-20.json "\`$date\`""
+git add .
+git commit -m "$message"
