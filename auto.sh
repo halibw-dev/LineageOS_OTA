@@ -16,8 +16,20 @@ sed -i "s!${oldd}!${build_cache}!" los-21.json
 url="https://sourceforge.net/projects/max-2-pixelexperience-ota/files/LineageOS/lineage-21.0-"$build_cache"-UNOFFICIAL-oxygen.zip/download"
 sed -i "s!${oldurl}!\"${url}\",!g" los-21.json
 
+echo 'Start uploading file ...'
+. ~/upload.sh
+
+if [ $? -ne 0 ];then
+	for ((i = 0; i <= 3; i++));
+	do
+		echo 'Upload attempts: "$i"'
+		. ~/upload.sh
+	done
+fi
+
 # Auto submit
 date=$(date +%Y%m%d)
 message="Update los-21.json "\`$date\`""
 git add .
 git commit -m "$message"
+git push origin HEAD
